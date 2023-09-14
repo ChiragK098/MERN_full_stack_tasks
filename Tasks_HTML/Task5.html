@@ -4,62 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task5</title>
+    <style>
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
-    <table style="width: 50%" border="1">
+    <table style="width: 50%; border-collapse: collapse">
       <form>
         <tr>
           <th>First name</th>
           <td>
-            <input type="text">
+            <input type="text" style="width:98.8%" />
           </td>
         </tr>
         <tr>
           <th>Last name</th>
           <td>
-            <input type="text">
+            <input type="text" style="width: 98.8%" />
           </td>
         </tr>
         <tr>
-          <td>Password:</td>
+          <th>Email</th>
           <td>
-            <input type="password" value="123456" />
+            <input type="text" style="width: 98.8%" />
           </td>
         </tr>
         <tr>
-          <td>Re-password:</td>
+          <th>Password</th>
           <td>
-            <input type="password" value="123456" />
+            <input type="text" style="width: 98.8%" />
           </td>
         </tr>
         <tr>
-          <td>Address:</td>
+          <th>Re-password</th>
           <td>
-            <input type="text" value="Cebu, Philippines" />
+            <input type="text" style="width: 98.8%" />
           </td>
         </tr>
         <tr>
-          <td>Age:</td>
+          <th rowspan="2">Gender:</th>
+          <td><input type="radio" value="male" />Male</td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="male" />Female</td>
+        </tr>
+        <tr>
+          <th>Age:</th>
           <td>
-            <input type="number" value="22" />
+            <input type="text" style="width: 98.8%" />
           </td>
         </tr>
         <tr>
+          <th>Address</th>
           <td>
-            <label for="gender">Gender:</label>
+            <textarea rows="5" cols="83"></textarea>
           </td>
+        </tr>
+        <tr>
+          <th>State</th>
           <td>
-            <select name="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+            <input type="text" style="width: 98.8%" />
+          </td>
+        </tr>
+        <tr>
+          <th>Country</th>
+          <td>
+            <select>
+              <option value="none" selected disabled hidden>
+                Select your Country
+              </option>
+              <option>India</option>
+              <option>Dubai</option>
+              <option>USA</option>
             </select>
           </td>
         </tr>
         <tr>
-          <td><input type="button" value="Save" /></td>
+          <th>Languages known</th>
+          <td>
+            <input type="checkbox" />English <input type="checkbox" />Hindi <input type="checkbox" />Kannada <input type="checkbox" />Telugu
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox">Hereby I declare all the given details are true
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: right;">
+              Login to <a href="">Ethnus </a>Webiste 
+            </td>
         </tr>
       </form>
     </table>
+    <div style="padding: 20px; padding-left: 350px;">
+      <input type="button" value="Register">
+    </div>
   </body>
 </html>
-

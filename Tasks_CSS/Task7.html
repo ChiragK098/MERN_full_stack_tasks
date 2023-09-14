@@ -1,64 +1,113 @@
-<Html>  
-    <head>   
-    <title>  
-    Registration Page  
-    </title>  
-    </head>  
-    <body bgcolor="Lightskyblue">  
-    <br>  
-    <br>  
-    <form>  
-      
-    <label> Firstname </label>         
-    <input type="text" name="firstname" size="15"/> <br> <br>  
-    <label> Middlename: </label>     
-    <input type="text" name="middlename" size="15"/> <br> <br>  
-    <label> Lastname: </label>         
-    <input type="text" name="lastname" size="15"/> <br> <br>  
-      
-    <label>   
-    Course :  
-    </label>   
-    <select>  
-    <option value="Course">Course</option>  
-    <option value="BCA">BCA</option>  
-    <option value="BBA">BBA</option>  
-    <option value="B.Tech">B.Tech</option>  
-    <option value="MBA">MBA</option>  
-    <option value="MCA">MCA</option>  
-    <option value="M.Tech">M.Tech</option>  
-    </select>  
-      
-    <br>  
-    <br>  
-    <label>   
-    Gender :  
-    </label><br>  
-    <input type="radio" name="male"/> Male <br>  
-    <input type="radio" name="female"/> Female <br>  
-    <input type="radio" name="other"/> Other  
-    <br>  
-    <br>  
-      
-    <label>   
-    Phone :  
-    </label>  
-    <input type="text" name="country code"  value="+91" size="2"/>   
-    <input type="text" name="phone" size="10"/> <br> <br>  
-    Address  
-    <br>  
-    <textarea cols="80" rows="5" value="address">  
-    </textarea>  
-    <br> <br>  
-    Email:  
-    <input type="email" id="email" name="email"/> <br>    
-    <br> <br>  
-    Password:  
-    <input type="Password" id="pass" name="pass"> <br>   
-    <br> <br>  
-    Re-type password:  
-    <input type="Password" id="repass" name="repass"> <br> <br>  
-    <input type="button" value="Submit"/>  
-    </form>  
-    </body>  
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task7</title>
+    <style>
+      /* Outer color box */
+      .outer-box {
+        background-color:#A22B55; /* Change to your desired outer box color */
+        padding: 20px 450px;
+      }
+
+      /* Inner color box */
+      .inner-box {
+        background-color: #75203F; /* Change to your desired inner box color */
+        padding-left: 100px;
+      }
+
+      /* Add some margin to separate the inner and outer boxes */
+      .inner {
+        margin: 10px;
+      }
+
+      /* Additional styles for your form content */
+      table {
+        width: 88%;
+        text-align: left;
+        padding-left: 80px;
+        border-collapse: separate; /* Separate borders for cells */
+        border-spacing: 10px; /* Add space between cells */
+        color: white;
+      }
+
+      /* Your other styles... */
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="inner">
+          <table>
+            <form>
+              <tr>
+                <th>Name:</th>
+                <td>
+                  <input type="text" placeholder="your name" />
+                </td>
+              </tr>
+              <tr>
+                <th>Email:</th>
+                <td>
+                  <input type="text" placeholder="your email" />
+                </td>
+              </tr>
+              <tr>
+                <th>Password:</th>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>Phone Number:</th>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>Gender:</th>
+                <td>
+                    Male:
+                  <input type="radio" />
+                  Female:
+                  <input type="radio" />
+                  Other:
+                  <input type="radio" />
+                </td>
+              </tr>
+              <tr>
+                <th>Language:</th>
+                <td>
+                    <select >
+                        <option value="none" selected disabled hidden >Select language</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                    </select>
+                    </td>
+              </tr>
+              <tr>
+                <th>Zip Code:</th>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>About:</th>
+                <td>
+                  <textarea placeholder="Write about Yourself.."></textarea>
+                </td>
+              </tr>
+              <!-- Rest of your form content... -->
+            </form>
+            <!-- Your form content here... -->
+          </table>
+          <div style="padding: 10px 5px;">
+            <input type="button" value="Register" style="padding: 15px 180px; font-size: 18px; font-weight: bold;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

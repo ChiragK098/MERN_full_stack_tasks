@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+.vertical {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 200px;
+  background-color: skyblue;
+  float: left; /* Float the vertical nav to the left */
+}
+
+.vertical li a {
+  display: block;
+  color: blue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.vertical li a.active {
+  background-color: orange;
+  color: white;
+}
+
+.vertical li a:hover:not(.active) {
+  background-color: #555;
+  color: blue;
+}
+
+.horizontal {
+  list-style-type: none;
+  margin: 10px;
+  padding: 15px;
+  background-color: #bbb; /* Apply the same background color as specified in your initial CSS */
+  float: right; /* Float the horizontal nav to the right */
+  clear: both; /* Add this to clear the floats and ensure it's below the vertical nav */
+}
+
+.horizontal li {
+  display: inline;
+  border-right: 1px solid blue;
+}
+
+.horizontal li a.active {
+  background-color: #373b3a; /* Apply the same active background color as specified in your initial CSS */
+  color: white;
+}
+
+.horizontal li a {
+  color: blue;
+  padding: 14px 16px; /* Adjust the padding to match your initial CSS */
+  text-decoration: none;
+  background-color: #bbb; /* Apply the same background color as specified in your initial CSS */
+}
+
+.horizontal li a:hover:not(.active) {
+  background-color: #6b6464; /* Apply the same hover background color as specified in your initial CSS */
+}
+
+</style>
+</head>
+<body>
+<h3>Vertical Navigation Bar</h3>
+<ul class="vertical">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#java">Java</a></li>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#html">HTML</a></li>
+  <li><a href="#bootstrap">Bootstrap</a></li>
+</ul>
+<h3 style="padding: 20px; padding-left: 1250px; padding-top: 200px;">Horizontal Navigation Bar</h3>
+<ul class="horizontal"> 
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Java</a></li>
+  <li><a href="#contact">HTML</a></li>
+  <li><a href="#about">CSS</a></li>
+</ul>
+</body>
+</html>
